@@ -7,7 +7,7 @@ export async function seedData() {
 }
 
 function getUrl(path: string) {
-  const baseUrl = process.env.CLIENT_SERVER || "http://localhost:9000"
+  const baseUrl = process.env.CLIENT_SERVER || "https://admin.idempire.us"
   const url = new URL(path, baseUrl)
   return url.toString()
 }
