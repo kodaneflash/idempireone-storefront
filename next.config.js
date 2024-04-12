@@ -21,18 +21,18 @@ const nextConfig = withStoreConfig({
        // Apply these headers to all routes in your application.
        source: "/:path*",
        headers: [
-         {
-           key: "Content-Security-Policy",
-           value: `default-src 'self'; 
-                   script-src 'self' 'https://idempireuss-production.up.railway.app'; 
-                   font-src 'self' https://fonts.gstatic.com; 
-                   img-src 'self' https://idempireuss-production.up.railway.app https://medusa-public-images.s3.eu-west-1.amazonaws.com;`,
-         },
-       ],
-     },
-   ];
- },
-})
+        {
+          key: "Content-Security-Policy",
+          value: `default-src 'self';
+                  script-src 'self' 'https://idempireuss-production.up.railway.app';
+                  font-src 'self' https://fonts.gstatic.com;
+                  img-src 'self' https://idempireuss-production.up.railway.app https://medusa-public-images.s3.eu-west-1.amazonaws.com;`,
+        },
+      ],
+    },
+  ];
+},
+});
 
 console.log("next.config.js", JSON.stringify(module.exports, null, 2))
 
